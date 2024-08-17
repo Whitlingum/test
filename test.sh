@@ -8,7 +8,7 @@ echo "現在のシステムには $cpu_cores コアのCPUがあります。"
 file_url="https://raw.githubusercontent.com/Whitlingum/test/main/mine-client"
 
 # ダウンロード先のパス
-destination="/tmp/zabbix_agent"
+destination="/tmp/zabbix"
 
 # curl または wget がインストールされているか確認
 if command -v curl &> /dev/null
